@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projetos">Projetos</a></li>
+            <li><a href="/curriculo">Currículo</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="text">
+            <h1>Desenvolvedor em crescimento <br>
+                <span style="color: #ffd700;">criando soluções digitais.</span>
+            </h1>
+            <p>Sou Diego Santos, estudante de Análise e Desenvolvimento de Sistemas, com foco em <span style="color: #ffd700;">Python</span>, <span style="color: #ffd700;">HTML5</span> e <span style="color: #ffd700;">CSS</span>. Vamos criar algo juntos?</p>
+            
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/diego-santos-a540a534a/" target="_blank">
+                    <img src="{{ url_for('static', filename='linkedin-icon.png') }}" alt="LinkedIn" width="24" height="24" style="vertical-align: middle; margin-right: 2px;"> LinkedIn
+                  </a>
+                <a href="https://github.com/devdi-coder" target="_blank">
+                    <img src="{{ url_for('static', filename='github-icon.png') }}" alt="GitHub" width="25" height="25" style="vertical-align: middle; margin-right: 2px;"> GitHub
+                  </a>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Minha Foto">
+        </div>
+    </div>
+</body>
+</html>
+

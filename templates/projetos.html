@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projetos">Projetos</a></li>
+            <li><a href="/curriculo">Currículo</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-2">
+        <div class="projetos-text">
+            <h1>Meus Projetos <br/>
+            <span style="color: #ffd700;">aqui estão alguns dos meus projetos.</span>      
+            </h1>
+        </div>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <a href="https://github.com/devdi-coder/calculadora" target="_blank">
+                <img src="{{ url_for('static', filename='cal1.png') }}" alt="Projeto 1">
+            </a>
+            <h2>Calculadora</h2>
+            <p>Calculadora simples desenvolvida em Python, projetada para realizar operações básicas como soma, subtração, multiplicação.</p>
+        </div>
+
+        <div class="project-card">
+            <a href="https://github.com/devdi-coder/zelda-style-game" target="_blank">
+                <img src="{{ url_for('static', filename='game1.png') }}" alt="Projeto 2">
+            </a>
+            <h2>Jogo de Aventura</h2>
+            <p>Jogo estilo os clássico feito em Python com Pygame, misturando aventura e ação simples.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='images/projeto3.jpg') }}" alt="Projeto 3">
+            <h2>Projeto 3</h2>
+            <p>Descrição do projeto.</p>
+        </div>
+    </div>
+</body>
+</html>

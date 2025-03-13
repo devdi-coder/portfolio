@@ -1,0 +1,143 @@
+/* Fundo preto e letras brancas */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Melhorar o cabeçalho */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:  #ffd700;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: -5;
+    margin: -5;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+/* Deixar a Home mais preenchida */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    height: 80vh;
+}
+
+.container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    height: 50vh;
+}
+/* Texto grande e mais compacto */
+.text {
+    width: 45%;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+/* Ajustar a imagem */
+.image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Botões de redes sociais */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #ffd700;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1px;
+}
+
+/* Estilização dos projetos individuais */
+.project-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h2 {
+    color: #ffd700;
+}
+
+.project-card p {
+    color: #ccc;
+    font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
+}
+
+/* Estilo para a página de Projetos */
+.projetos-text {
+    font-size: 25px; /* Tamanho da fonte diferente */
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff; /* Cor do texto ajustada */
+}
+
